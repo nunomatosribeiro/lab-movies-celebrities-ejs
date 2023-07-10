@@ -15,7 +15,7 @@ router.post("/create", async (req, res) => {
 
   try {
     const newCelebrity = await Celebrity.create(celebrity);
-    res.redirect('/celebrities')
+    res.redirect('celebrities')
   } catch (error) {
     console.log(error);
   }
@@ -29,9 +29,6 @@ try{
 }catch(error){
     console.log(error)
 }
-    
 })
-
-
 
 module.exports = router;
